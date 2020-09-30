@@ -13,10 +13,10 @@ public class test1
 		ChromeDriver driver=new ChromeDriver();
 		System.setProperty("webdriver.chrome.silentOutput","true");
 		driver.manage().window().maximize();
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		//launch site
 		driver.get("https://semantic-ui.com/modules/dropdown.html");
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		WebElement e=driver.findElement(By.xpath("//h4[text()='Search Selection']"));
 		driver.executeScript("argument[0].scrollIntoView();",e);
 		
